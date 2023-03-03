@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/img_anh_sach"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/icon_sach_1" />
+
+
+    <TextView
+        android:id="@+id/txt_ten_sach"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:text="Tên sách"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+
+</LinearLayout>

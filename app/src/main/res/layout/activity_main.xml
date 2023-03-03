@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTitle"
+        android:text="PHIẾU MUA SÁCH"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Tên sách: "
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/edt_nhap_ten_sach"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/edt_boder"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_giao_khoa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giáo khoa"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/radio_tieu_thuyet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tiểu thuyết"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/radio_khoa_hoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Khoa học"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/radio_tam_ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tâm lý"
+            android:textColor="@color/black" />
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_dat_sach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Đặt sách" />
+
+        <Button
+            android:id="@+id/btn_cap_nhat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cập nhật" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTitle"
+        android:text="Danh sách sách đã đặt"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+
+    <ListView
+        android:id="@+id/lv_danh_sach"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/black"
+        android:dividerHeight="1dp"
+        android:padding="10dp" />
+
+
+</LinearLayout>
